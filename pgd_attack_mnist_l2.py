@@ -20,7 +20,7 @@ parser.add_argument('--test-batch-size', type=int, default=200, metavar='N',
                     help='input batch size for testing (default: 200)')
 parser.add_argument('--no-cuda', action='store_true', default=False,
                     help='disables CUDA training')
-parser.add_argument('--epsilon', default=2.0,
+parser.add_argument('--epsilon', default=4.0,
                     help='perturbation')
 parser.add_argument('--num-steps', default=40,
                     help='perturb number of steps')
