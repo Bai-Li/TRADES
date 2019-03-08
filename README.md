@@ -18,6 +18,7 @@ $ conda install pytorch=0.4.1
 ```
 #### How to run the attack on MNIST?
 * Step 1: Download ```mnist_X.npy``` and ```mnist_Y.npy```.
-* Step 2: Run ```pgd_attack_mnist_l2.py```. The adversarial examples will be stored in ```./data_attack```.
+* Step 2: Run ```pgd_attack_mnist_l2.py```. The adversarial examples will be stored in ```data_attack/X_adv.npy```.
 
 In each iteration, it outputs the number of mis-classified examples in each batch and the largest L_2 norm of perturbations.
+Optionally, one can run ```data_attack/draw.py``` to see the images of the adversarial examples.
